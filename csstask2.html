@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            color: blue;
+        }
+        .vertical-container {
+            float: left;
+            width: 50%;
+        }
+        .vertical {
+            margin-left: 50px;
+            border: 2px solid black;
+            width: fit-content;
+            padding: 0px 16px 4px 14px;
+            justify-content: center;
+        }
+        .vertical li{
+            width: 200px;
+            background-color: skyblue;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .vertical li:hover{
+            color: white;
+            background-color: rgb(255, 187, 0);
+        }
+        .horizontal-container {
+            float: left;
+            width: 50%;
+        }
+        .horizontal {
+            border: 2px solid black;
+            width: 80%;
+            padding: 5px;
+            margin-right: 50px;
+        }
+        .horlist {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+        }
+        .horizontal ul {
+            background-color: rgb(207, 201, 201);
+            margin-left: 10px;
+        }
+        .horizontal li {
+            padding: 15px;
+            font-size: 20px;
+            border-right: 1px solid blue;
+        }
+        .horizontal li:hover{
+            color: white;
+            background-color: gray;
+        }        
+    </style>
+</head>
+<body>
+    <h2>CSS Task 2</h2>
+    <h4 style="margin-left: 50px;margin-top: 60px;">Vertical Navigation Bar</h4>
+    <div class="vertical-container">
+        <div class="vertical">
+            <ul class="verlist">
+                <li>Home</li>
+                <li>Java</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+    <h4>Horizontal Navigation Bar</h4>
+    <div class="horizontal-container">
+        <div class="horizontal">
+            <ul class="horlist">
+                <li>Home</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
